@@ -1,0 +1,22 @@
+.chart-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background: #121212; /* Fondo oscuro acorde al tema */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chart-container h1 {
+    color: #00d9ff; /* Color del texto para el título */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .chart-container canvas {
+    background-color: #1e1e1e; /* Fondo del gráfico */
+    border-radius: 10px;
+  }
+  

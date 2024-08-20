@@ -1,0 +1,180 @@
+/* Contenedor principal que incluye el sidebar y el contenido */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar (NavBar) */
+.sidebar {
+  width: 250px;
+  background-color: #34495e; /* Azul oscuro */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #2c3e50; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Contenedor del contenido principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f5f7; /* Fondo claro */
+  box-sizing: border-box;
+  overflow-y: auto; /* Para asegurar que el contenido es scrollable */
+}
+
+/* Estilo del encabezado */
+h1 {
+  color: #2c3e50; /* Azul oscuro para el encabezado */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #2c3e50;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #2980b9; /* Azul para el botón */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1e6a8c; /* Azul más oscuro */
+}
+
+/* Estilo de la lista de celulares */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ecf0f1; /* Fondo gris claro */
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li h3 {
+  margin: 0;
+  color: #2980b9;
+}
+
+ul li p {
+  margin: 5px 0;
+  color: #2c3e50;
+}
+
+ul li img {
+  max-width: 100px;
+  margin-right: 15px;
+}
+
+ul li button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #e74c3c; /* Rojo para eliminar */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul li button:last-child {
+  background-color: #2980b9; /* Azul para editar */
+}
+
+ul li button:hover {
+  background-color: #c0392b; /* Rojo más oscuro */
+}
+
+ul li button:last-child:hover {
+  background-color: #1e6a8c; /* Azul más oscuro */
+}
+
+/* Estilo del título de la lista */
+h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo del contenedor del gráfico */
+.chart-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Título del gráfico */
+.chart-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.chart-container canvas {
+  width: 100%;
+  height: 100%;
+}
+.app-layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    overflow-y: auto;
+}

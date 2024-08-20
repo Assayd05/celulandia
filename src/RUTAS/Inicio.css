@@ -1,0 +1,170 @@
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #000428, #004e92);
+  color: #fff;
+}
+
+/* Botón para alternar el formulario */
+.toggle-form-button {
+  background-color: #0072ff;
+  background-image: linear-gradient(315deg, #00c6ff 0%, #0072ff 74%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+.toggle-form-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 114, 255, 0.4);
+}
+
+/* Contenedor Principal */
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Formulario */
+.formulario {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.formulario h2 {
+  color: #00c6ff;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.formulario input:focus, .formulario textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+.formulario button {
+  padding: 12px 20px;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 114, 255, 0.4);
+}
+
+/* Encabezado de productos */
+.productos-header {
+  font-size: 26px;
+  color: #00c6ff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Grid de Productos */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjetas de Productos */
+.producto-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.producto-card img {
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.producto-card img:hover {
+  transform: scale(1.05);
+}
+
+.producto-card h3 {
+  margin: 15px 0 10px;
+  color: #00c6ff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.producto-card p {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.producto-card button {
+  background-color: #0072ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3);
+}
+
+.producto-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 114, 255, 0.4);
+}
